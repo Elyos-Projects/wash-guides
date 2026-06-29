@@ -1,0 +1,31 @@
+{
+  "id": "wash-guides-arch-001",
+  "title": "ADR: content format (JSON vs MDX) — decide first",
+  "project": "wash-guides",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["public-health", "wash", "content", "tooling"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "wash-guides publishes open, multilingual WASH how-tos that paraphrase and cite authoritative guidance (WHO/UNICEF/CDC/Sphere). The content-unit schema and the static renderer both depend on the storage format, so this ADR is decided first; the schema is provisional until it lands. Content is the primary deliverable and tooling is deliberately light.",
+  "objective": "Record an Architecture Decision Record selecting the content format (JSON vs MDX) for WASH content units, weighing structured validation, citation/numeric-claim capture, plain-language authoring ergonomics, translation/i18n, and static rendering, so the schema and renderer can build on a settled foundation.",
+  "acceptanceCriteria": [
+    "ADR compares JSON vs MDX against criteria: schema/field validation (incl. sources, numericClaims, risk class, review/sign-off fields), authoring ergonomics for plain-language steps, i18n/translation workflow, and static rendering to accessible + printable output",
+    "ADR records a decision with rationale and explicitly notes the content schema (data-003) is provisional until this ADR is merged",
+    "ADR notes how citations, per-claim numeric values, and review/sign-off metadata are represented in the chosen format",
+    "ADR is committed to the repo and referenced by the schema and renderer tasks"
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\wash-guides\\PLAN.md",
+    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts",
+    "C:\\code\\elyos\\docs\\good-deed-definition.md"
+  ],
+  "output": "A committed ADR document selecting the WASH content format (JSON vs MDX) with rationale, consumed by the content-schema and renderer tasks.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}
