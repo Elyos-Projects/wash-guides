@@ -1,0 +1,32 @@
+{
+  "id": "wash-guides-partner-014",
+  "title": "Secure credentialed expert reviewer(s): WASH/EH + clinician",
+  "project": "wash-guides",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["public-health", "wash", "governance", "expert-review", "partner-engagement"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "No HIGH-risk content (M2: ORS/dehydration, chemical dosing) may begin until a credentialed expert reviewer is secured. The credential bar is specific: a WASH/environmental-health professional (MPH in environmental health, registered sanitarian/REHS, or equivalent) for water-treatment/dosing content, and a licensed clinician (physician or nurse) for ORS/dehydration danger-sign content. Outreach deadline is 2026-09-30; if unmet, M2 does not start. This task documents outreach, engagement, consent, and the reviewers ledger entry.",
+  "objective": "Identify, outreach to, and secure commitment from a credentialed WASH/environmental-health professional (for dosing/water-treatment content) and a licensed clinician (for ORS/dehydration content) to serve as expert reviewers, with credentials and consent recorded in the reviewers ledger; establish version-scoped sign-off and veto/escalation rules.",
+  "acceptanceCriteria": [
+    "A WASH/environmental-health professional (e.g., MPH in environmental health, registered sanitarian, or field-recognized WASH/EH equivalent) agrees to review and sign off dosing/water-treatment HIGH-risk units, with their credential, affiliation, and consent to be credited recorded in the reviewers ledger",
+    "A licensed clinician (physician or nurse) agrees to review and sign off ORS/dehydration danger-sign HIGH-risk units, with their credential, affiliation, and consent recorded in the reviewers ledger",
+    "Version-scoped sign-off rules are documented: sign-off attaches to a specific content version and citation/numeric set; edits require re-sign-off; expert veto on whether a HIGH-risk unit is safe to ship stands and cannot be overridden by a maintainer",
+    "Veto/escalation rules are documented: disagreement between expert and maintainer is logged and escalated to a second expert or Elyos governance",
+    "Reviewers ledger entry committed to the repo (with credential, consent, and scope fields); outreach date and agreement date recorded",
+    "On successful completion, HIGH-risk content tasks (content-015, content-016, content-017) are unblocked"
+  ],
+  "resources": [
+    "PLAN.md",
+    "TASKS.md"
+  ],
+  "output": "A committed reviewers ledger document recording the secured credentialed expert reviewer(s) with credentials, consent, and version-scoped sign-off and veto rules; outreach and agreement dates recorded.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

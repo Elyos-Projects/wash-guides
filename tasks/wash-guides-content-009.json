@@ -1,0 +1,34 @@
+{
+  "id": "wash-guides-content-009",
+  "title": "SODIS + household filtration + settling/flocculation units (method-level, no dosing)",
+  "project": "wash-guides",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["public-health", "wash", "content", "water-treatment", "sodis", "filtration"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Solar disinfection (SODIS), household filtration, and settling/flocculation are household water treatment methods that complement boiling and chemical treatment. At the method-level (conditions, technique, appropriate use) these are medium-risk topics. Any chemical dosing quantities (e.g., flocculant amounts) are explicitly excluded from these units and reserved for the HIGH-risk M2 task (content-017). These units build on the authoring pattern established by content-006.",
+  "objective": "Author, source-cite, and get domain-reviewed WashUnit documents covering: (1) solar disinfection (SODIS) — conditions, bottle types, exposure duration, appropriate use cases; (2) household filtration — filter types and appropriate selection (ceramic, biosand, etc.) at the household level; and (3) settling and flocculation — the technique and when to use it, without any chemical dosing amounts, which are reserved for M2.",
+  "acceptanceCriteria": [
+    "SODIS unit covers conditions (turbidity, bottle type, sunlight duration/UV dose) and technique at the method level; any dosing amounts for edge-condition chemical use are explicitly excluded and noted as covered in a HIGH-risk M2 unit",
+    "Filtration unit covers household filter types, selection, and use/maintenance without product/brand recommendations",
+    "Flocculation/settling unit covers the technique without specifying flocculant dosing quantities (those are split to content-017 per the risk-classification policy)",
+    "Every claim tied to a specific named authoritative source (WHO/UNICEF/CDC/Sphere) with retrieval date and verified license; no verbatim copied text; no logos/emblems; CI copy/similarity check passes",
+    "Each unit reviewed and approved by a WASH/public-health domain reviewer distinct from the author; PR-tied review-log entries written; riskClass is medium; no dosing instruction embedded",
+    "CI schema validation, citation-coverage, no-self-approval, readability, and copy/similarity gates all pass"
+  ],
+  "resources": [
+    "PLAN.md",
+    "TASKS.md",
+    "tasks/wash-guides-content-006.json",
+    "tasks/wash-guides-arch-002.json"
+  ],
+  "output": "Committed, domain-reviewed, source-cited WashUnit documents for SODIS, household filtration, and settling/flocculation at the method level (no dosing), with PR-tied review-log entries.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

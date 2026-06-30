@@ -1,0 +1,34 @@
+{
+  "id": "wash-guides-l10n-020",
+  "title": "Localize core medium-risk set into priority language #1 (safety-accuracy reviewed)",
+  "project": "wash-guides",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["public-health", "wash", "content", "translation", "i18n", "localization"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "translation",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "Localizing the core medium-risk content set (handwashing through surface disinfection) into the first priority non-English language (to be confirmed by the securing partner) is the primary M3 deliverable. Translations must be safety-accuracy reviewed — not just fluent — because a fluent but inaccurate translation of a WASH how-to can cause harm. The priority language is determined by partner context; this task is initiated once the i18n framework (i18n-019) is ready and the full medium-risk set (content-012) is complete.",
+  "objective": "Translate the complete core medium-risk WASH content set (handwashing, safe water storage, boiling, SODIS/filtration/flocculation method-level, latrine/sanitation, safe disposal of child feces, MHH, household surface disinfection) into priority language #1, with every translation reviewed by a competent speaker who also checks safety accuracy (numbers, step order, key terms) and not just fluency.",
+  "acceptanceCriteria": [
+    "All medium-risk WashUnit content (content-006 through content-012) is translated into priority language #1 and committed as locale catalog entries conforming to the i18n framework (i18n-019)",
+    "Every translation is reviewed by a competent speaker of priority language #1 who verifies both fluency and safety accuracy (numbers, step order, key protective-behavior terms, disclaimer text)",
+    "Safety-accuracy review is documented: a PR-tied review-log entry records which content was reviewed, by whom, and that both fluency and safety accuracy were checked",
+    "Translated disclaimer text preserves the 'informational, not a substitute for professional care' framing in the target language",
+    "Source attribution is preserved in the translated output (sources are still cited, attribution language is translated)",
+    "Build-time i18n completeness check passes for priority language #1 (no missing required strings); no verbatim copied source text; reviewed and approved by a translation+safety reviewer distinct from the translator"
+  ],
+  "resources": [
+    "PLAN.md",
+    "TASKS.md",
+    "tasks/wash-guides-i18n-019.json",
+    "tasks/wash-guides-content-012.json"
+  ],
+  "output": "A committed locale catalog for priority language #1 covering all core medium-risk content, with documented safety-accuracy review and PR-tied review-log entries.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

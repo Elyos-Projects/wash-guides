@@ -1,0 +1,32 @@
+{
+  "id": "wash-guides-content-008",
+  "title": "Safe water storage + boiling water units (source-cited)",
+  "project": "wash-guides",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["public-health", "wash", "content", "water-treatment", "safe-storage"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Safe water storage and boiling are foundational household water treatment and safe storage (HWTS) behaviors. Boiling guidance involves time and temperature parameters that are numeric claims requiring citation and verification, though at the household-practice level (not chemical-dosing level) this remains medium risk. These units build on the handwashing sample (content-006) as the established authoring pattern and will be consumed by the chemical-dosing (HIGH-risk) units in M2.",
+  "objective": "Author, source-cite, and get domain-reviewed WashUnit documents covering: (1) safe water storage practices (clean containers, covered storage, safe drawing, storage duration) and (2) boiling water as a household water treatment method (duration, rolling boil, cooling and storage), both at the medium-risk household-practice level with no chemical-dosing instruction.",
+  "acceptanceCriteria": [
+    "Every numeric claim (e.g., boiling duration, storage timelines) is tied to a specific named authoritative source (WHO/UNICEF/CDC) with retrieval date and verified source license; no claim is uncited",
+    "All source text is paraphrased — no verbatim copied text; no logos or emblems; CI copy/similarity check passes",
+    "Units conform to the WashUnit schema: all required fields present, riskClass is medium, no chemical-dosing instruction (dosing is reserved for HIGH-risk M2 units), steps are plain-language per the style guide",
+    "Each unit reviewed and approved by a WASH/public-health domain reviewer distinct from the author; PR-tied review-log entries written; no clinical instruction included",
+    "CI schema validation, citation-coverage, no-self-approval, readability, and copy/similarity gates all pass"
+  ],
+  "resources": [
+    "PLAN.md",
+    "TASKS.md",
+    "tasks/wash-guides-content-006.json"
+  ],
+  "output": "Committed, domain-reviewed, source-cited WashUnit documents for safe water storage and boiling water, conforming to the content schema and style guide, with PR-tied review-log entries.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

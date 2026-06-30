@@ -1,0 +1,35 @@
+{
+  "id": "wash-guides-l10n-022",
+  "title": "Localize core set into priority language #2 (safety-accuracy reviewed)",
+  "project": "wash-guides",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["public-health", "wash", "content", "translation", "i18n", "localization"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "translation",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "Reaching the ≥3 languages success metric requires a second non-English locale. Priority language #2 is determined by partner context (low-resource languages where WASH need is greatest take precedence). This task mirrors l10n-020 for the second priority language: translate the full core medium-risk set with safety-accuracy review, not just fluency. It depends on the i18n framework (i18n-019) and the full medium-risk content set (content-012).",
+  "objective": "Translate the complete core medium-risk WASH content set into priority language #2, with every translation reviewed by a competent speaker who checks both fluency and safety accuracy (numbers, step order, key protective-behavior terms, disclaimer text) — mirroring the process of l10n-020 for the second priority language.",
+  "acceptanceCriteria": [
+    "All medium-risk WashUnit content (content-006 through content-012) is translated into priority language #2 and committed as locale catalog entries conforming to the i18n framework (i18n-019)",
+    "Every translation is reviewed by a competent speaker of priority language #2 who verifies both fluency and safety accuracy (numbers, step order, key protective-behavior terms, disclaimer text)",
+    "Safety-accuracy review is documented: a PR-tied review-log entry records which content was reviewed, by whom, and that both fluency and safety accuracy were checked",
+    "Translated disclaimer text preserves the 'informational, not a substitute for professional care' framing in the target language",
+    "Source attribution is preserved in the translated output",
+    "Build-time i18n completeness check passes for priority language #2; no verbatim copied source text; reviewed and approved by a translation+safety reviewer distinct from the translator",
+    "If priority language #2 requires RTL layout, RTL support in the i18n framework is exercised and confirmed working"
+  ],
+  "resources": [
+    "PLAN.md",
+    "TASKS.md",
+    "tasks/wash-guides-i18n-019.json",
+    "tasks/wash-guides-content-012.json"
+  ],
+  "output": "A committed locale catalog for priority language #2 covering all core medium-risk content, with documented safety-accuracy review and PR-tied review-log entries.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

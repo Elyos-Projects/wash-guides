@@ -1,0 +1,32 @@
+{
+  "id": "wash-guides-a11y-013",
+  "title": "WCAG 2.2 AA hardening + manual AT audit of rendered site",
+  "project": "wash-guides",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["public-health", "wash", "tooling", "accessibility", "wcag"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "wash-guides targets last-mile distribution including people with disabilities, low literacy, and assistive technology users. The renderer (render-007) provides a baseline, but WCAG 2.2 AA compliance requires both automated checks and manual AT (assistive technology) audit. This task hardens the rendered site to AA, documents a manual audit across a defined support matrix, and ensures printable output is legible and low-literacy-friendly.",
+  "objective": "Harden the rendered wash-guides site to WCAG 2.2 AA: fix all automated axe/pa11y critical issues, conduct and document a manual AT audit across a defined support matrix (screen reader + browser combinations), and verify printable output is legible and low-literacy-friendly.",
+  "acceptanceCriteria": [
+    "Automated axe/pa11y checks pass with zero critical WCAG 2.2 AA issues on all rendered content pages",
+    "A manual AT audit is conducted and documented across a defined support matrix (minimum: one screen reader + browser combination per major platform); all identified critical issues are fixed before merge",
+    "Printable output (print CSS / PDF) is verified legible: adequate font size, contrast, and step structure for low-literacy readers; tested via print preview or PDF inspection",
+    "Audit results and support matrix are documented in the repo (e.g., in a review log or a11y audit file)",
+    "Reviewed and approved by an accessibility reviewer distinct from the author; pnpm build && pnpm test && pnpm lint all pass"
+  ],
+  "resources": [
+    "PLAN.md",
+    "TASKS.md",
+    "tasks/wash-guides-render-007.json"
+  ],
+  "output": "A PR hardening the rendered site to WCAG 2.2 AA with zero automated critical issues, a documented manual AT audit, and verified printable output legibility.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

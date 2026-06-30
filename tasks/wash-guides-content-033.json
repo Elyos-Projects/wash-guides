@@ -1,0 +1,34 @@
+{
+  "id": "wash-guides-content-033",
+  "title": "Read-aloud/audio versions for non-readers",
+  "project": "wash-guides",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["public-health", "wash", "content", "accessibility", "audio", "low-literacy"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The primary beneficiaries of wash-guides include people who cannot read the text at all. Audio or read-aloud versions expand reach to non-readers, pairs with the low-literacy pictogram goal (design-028), and supports last-mile distribution where oral communication is the norm. Audio scripts must preserve safety accuracy and must not introduce clinical instruction or claims not in the source text. This is a low-risk content task (it adapts existing medium-risk content into audio-script format, not new claims).",
+  "objective": "Produce audio-script versions of the core medium-risk WASH content units (handwashing, safe water storage/boiling, latrine use, safe excreta disposal) suitable for recording and playback on basic mobile devices, with content accuracy verified against the source units and no new claims added beyond the reviewed source units.",
+  "acceptanceCriteria": [
+    "Audio scripts are produced for at minimum the core medium-risk units: handwashing technique, safe water storage, boiling water, latrine use/maintenance, and safe disposal of child feces",
+    "Audio scripts preserve safety accuracy: no claims are added beyond the reviewed source units; no clinical instruction; key steps and numbers match the reviewed source unit exactly",
+    "Audio scripts are reviewed and approved by a WASH/public-health domain reviewer distinct from the author to confirm accuracy is preserved in the audio-script adaptation",
+    "Scripts are committed in a format suitable for voice recording (clear speaker cues, plain language, appropriate pacing notes); no verbatim WHO/UNICEF text copied",
+    "Attribution and the appropriate disclaimer are included in the script (to be read aloud); PR-tied review-log entry written"
+  ],
+  "resources": [
+    "PLAN.md",
+    "TASKS.md",
+    "tasks/wash-guides-content-006.json",
+    "tasks/wash-guides-content-008.json",
+    "tasks/wash-guides-content-010.json"
+  ],
+  "output": "Committed audio-script documents for core medium-risk WASH content units, accuracy-reviewed against the source units, with attribution and disclaimer included and PR-tied review-log entry.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

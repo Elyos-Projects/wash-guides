@@ -1,0 +1,31 @@
+{
+  "id": "wash-guides-sec-032",
+  "title": "Dependency/supply-chain audit + SRI hardening",
+  "project": "wash-guides",
+  "type": "maintenance",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["public-health", "wash", "tooling", "security", "supply-chain"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "wash-guides has a minimal dependency footprint (TypeScript/ESM/pnpm, static site generator, test tooling). Supply-chain integrity is still important: a compromised build dependency could inject tracking scripts or modify content integrity. Subresource integrity (SRI) hashes should be applied where applicable. This is a recurring maintenance task; the first instance establishes the process. Dependencies should be pinned/locked and reviewed against known vulnerability advisories.",
+  "objective": "Conduct a dependency and supply-chain audit of the wash-guides toolchain: review all pnpm dependencies for known vulnerabilities, ensure the lockfile is up to date and dependencies are pinned, apply Subresource Integrity (SRI) hashes where applicable in the rendered output, and produce a brief audit report.",
+  "acceptanceCriteria": [
+    "All pnpm dependencies are reviewed against current vulnerability advisories (e.g., using pnpm audit or equivalent); any critical or high-severity vulnerabilities are addressed or documented with a mitigation plan",
+    "Dependency lockfile (pnpm-lock.yaml) is verified up to date and committed; no unpinned dependencies in production build",
+    "SRI hashes are applied to any inline scripts or external resources in rendered output where applicable; if no external resources exist (no-egress posture), this is confirmed and documented",
+    "A brief audit report is committed to the repo documenting: audit date, tool/method used, findings, and any remediations; pnpm build && pnpm test && pnpm lint pass after any changes",
+    "Reviewed and approved by a maintainer distinct from the author"
+  ],
+  "resources": [
+    "PLAN.md",
+    "TASKS.md"
+  ],
+  "output": "A PR with updated/pinned dependencies, SRI hardening where applicable, and a committed supply-chain audit report.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

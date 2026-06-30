@@ -1,0 +1,37 @@
+{
+  "id": "wash-guides-content-017",
+  "title": "Chemical disinfection dosing for flocculation/SODIS edge conditions",
+  "project": "wash-guides",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["public-health", "wash", "content", "water-treatment", "dosing", "flocculation", "sodis"],
+  "riskTier": "high",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "The SODIS and flocculation method-level units (content-009) explicitly excluded chemical dosing amounts. This HIGH-risk unit covers those dosing specifics: flocculant amounts for settling/flocculation and chemical dosing for SODIS edge conditions where chemical pre-treatment is recommended. Like all HIGH-risk dosing content, it is gated on the secured WASH/EH expert (partner-014) and the CI HIGH-risk gate (ci-018). Divergence between authoritative sources on dosing values must be stated, not averaged.",
+  "objective": "Author, source-cite, independently numeric-verify, and WASH/EH-expert-confirm a WashUnit covering chemical disinfection dosing for: (1) coagulant/flocculant amounts in settling/flocculation and (2) chemical pre-treatment dosing for SODIS edge conditions where turbidity or conditions require it — with every numeric value tied to a specific authoritative source, independently second-checked, and confirmed by the WASH/EH expert.",
+  "acceptanceCriteria": [
+    "Every dosing value (flocculant amount, concentration, SODIS chemical pre-treatment quantity) is tied to a specific named authoritative source with retrieval date and verified license",
+    "Every numeric value is independently second-checked by a person other than the author (numericClaims[].verifiedBy is distinct from the author) and confirmed by the secured WASH/EH expert (expertConfirmed:true on every numericClaim)",
+    "Where authoritative sources materially diverge on a dosing value, the divergence is explicitly stated and both sources linked; no averaging of conflicting values",
+    "A recorded expertSignOff from the secured WASH/EH professional (partner-014) is attached to this content version before merge; the sign-off is version-scoped",
+    "Unit carries a persistent 'This is general information, not a substitute for trained WASH practice' disclaimer in the rendered output; no brand or product recommendations",
+    "All source text is paraphrased — no verbatim copied text; no logos/emblems; CI copy/similarity check passes",
+    "CI HIGH-risk gate (ci-018) passes: expertSignOff present, all numericClaims have verifiedBy and expertConfirmed:true, disclaimer field present",
+    "Reviewed and approved by a WASH/public-health domain reviewer distinct from the author and the expert; PR-tied review-log entry written"
+  ],
+  "resources": [
+    "PLAN.md",
+    "TASKS.md",
+    "tasks/wash-guides-partner-014.json",
+    "tasks/wash-guides-content-009.json",
+    "tasks/wash-guides-ci-018.json"
+  ],
+  "output": "A committed, WASH/EH-expert-signed-off, independently numeric-verified, source-cited WashUnit for chemical disinfection dosing in flocculation and SODIS edge conditions, with recorded expertSignOff and the required disclaimer.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

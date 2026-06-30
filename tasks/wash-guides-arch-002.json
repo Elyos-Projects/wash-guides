@@ -1,0 +1,31 @@
+{
+  "id": "wash-guides-arch-002",
+  "title": "ADR: risk-classification policy (which topics are HIGH; gates each triggers)",
+  "project": "wash-guides",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["public-health", "wash", "content", "risk-management", "governance"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "wash-guides covers WASH topics spanning a wide risk range: general hygiene behaviors (medium risk) through clinical ORS/dehydration guidance and chemical dosing (high risk). Without a documented, auditable rule for which topics are high vs. medium, and what gates each class triggers, individual contributors cannot apply the policy consistently and CI cannot enforce it. This ADR is decided in M0 alongside arch-001 and gates all M2 content tasks.",
+  "objective": "Record an Architecture Decision Record that explicitly classifies which WASH topics are riskTier:high (clinical ORS/dehydration; chemical water-treatment dosing) vs. riskTier:medium (general hygiene/sanitation behaviors), specifies the review gates each class triggers, defines the in-scope vs. out-of-scope boundary, and flags known borderline cases for the credentialed expert to confirm.",
+  "acceptanceCriteria": [
+    "ADR documents the explicit rule that ORS/dehydration danger-signs and chemical dosing (chlorination concentrations, contact times, SODIS edge conditions) are riskTier:high; general hygiene and sanitation behavior is riskTier:medium",
+    "ADR specifies the gates triggered by each class: medium requires WASH/public-health domain review + no-self-approval; high additionally requires credentialed-expert sign-off (WASH/EH professional for dosing; licensed clinician for ORS/dehydration), independent numeric verification of every dose/ratio/contact-time, and a persistent 'informational, not a substitute for professional care/training' disclaimer with danger-signs/when-to-seek-care content",
+    "ADR defines the scope boundary between safe household practice (in scope) and clinical instruction (out of scope — link only), and explicitly lists known borderline cases (e.g., ORS for infants) flagged for the secured credentialed expert to confirm",
+    "ADR is committed to the repo and referenced by the CI gates task (ci-004) and the HIGH-risk CI enforcement task (ci-018)",
+    "ADR is reviewed and approved by a WASH/public-health domain reviewer distinct from the author (no self-approval)"
+  ],
+  "resources": [
+    "PLAN.md",
+    "TASKS.md"
+  ],
+  "output": "A committed ADR document recording the risk-classification policy, class-specific review gates, and known borderline cases, consumed by the CI and all content tasks.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

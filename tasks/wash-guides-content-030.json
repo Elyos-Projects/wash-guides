@@ -1,0 +1,34 @@
+{
+  "id": "wash-guides-content-030",
+  "title": "School-WASH hygiene-promotion pack",
+  "project": "wash-guides",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["public-health", "wash", "content", "hygiene", "school-wash", "children"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "School-WASH hygiene promotion is an important channel for behavior change, reaching children and through them households. This backlog task is partner/context-driven: the content pack's topics, format, and age-appropriate framing should be guided by a secured partner who works in school-health or education. It is medium-risk (hygiene promotion, not clinical or dosing content) but requires WASH domain review and culturally appropriate framing for school settings.",
+  "objective": "Author, source-cite, and get domain-reviewed a school-WASH hygiene-promotion content pack covering key protective behaviors (handwashing, safe water use, latrine use/maintenance, menstrual hygiene management in school) in age-appropriate, plain-language format suitable for distribution in school settings.",
+  "acceptanceCriteria": [
+    "Content pack covers key school-WASH protective behaviors: handwashing at school, safe water practices, latrine/toilet use and hygiene, and MHH for school-age girls where appropriate",
+    "Content is age-appropriate for school settings (format, vocabulary, and step complexity appropriate for children and adolescents)",
+    "Every claim tied to a named authoritative source with retrieval date and verified license; no verbatim copied text; no logos/emblems; CI copy/similarity check passes",
+    "Unit conforms to the WashUnit schema: riskClass is medium, no clinical instruction, reviewed and approved by a WASH/public-health domain reviewer distinct from the author",
+    "If a school-WASH partner drives the context, their requirements and language preferences are reflected; PR-tied review-log entry written",
+    "CI schema validation, citation-coverage, no-self-approval, readability, and copy/similarity gates all pass"
+  ],
+  "resources": [
+    "PLAN.md",
+    "TASKS.md",
+    "tasks/wash-guides-content-006.json",
+    "tasks/wash-guides-style-005.json"
+  ],
+  "output": "A committed, domain-reviewed, source-cited school-WASH hygiene-promotion content pack covering key protective behaviors in age-appropriate format, with a PR-tied review-log entry.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

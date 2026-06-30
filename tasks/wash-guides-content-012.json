@@ -1,0 +1,32 @@
+{
+  "id": "wash-guides-content-012",
+  "title": "Household cleaning & surface disinfection (non-clinical)",
+  "project": "wash-guides",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["public-health", "wash", "content", "hygiene", "disinfection"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Household surface cleaning and disinfection is a key hygiene promotion topic, particularly important during disease outbreaks. The non-clinical framing means this unit covers general household practice (cleaning methods, frequency, safe dilution guidance for common household disinfectants) without specifying clinical-grade concentrations or procedures. Any chemical dosing for water treatment is in the HIGH-risk M2 tasks. This unit builds on the authoring pattern from content-006.",
+  "objective": "Author, source-cite, and get domain-reviewed a WashUnit document covering household cleaning and surface disinfection at the non-clinical household-practice level: what surfaces to clean and how often, general disinfection methods (soap/detergent cleaning, diluted household disinfectant use), and safe handling of cleaning products — without specifying clinical-grade dosing that belongs in HIGH-risk units.",
+  "acceptanceCriteria": [
+    "Every claim tied to a specific named authoritative source (WHO/UNICEF/CDC) with retrieval date and verified license; no verbatim copied text; no logos/emblems; CI copy/similarity check passes",
+    "Unit conforms to the WashUnit schema: all required fields present, riskClass is medium, no clinical-grade dosing instruction, steps are plain-language per the style guide",
+    "Unit reviewed and approved by a WASH/public-health domain reviewer distinct from the author; a PR-tied review-log entry written; no brand or product recommendations included",
+    "CI schema validation, citation-coverage, no-self-approval, readability, and copy/similarity gates all pass"
+  ],
+  "resources": [
+    "PLAN.md",
+    "TASKS.md",
+    "tasks/wash-guides-content-006.json",
+    "tasks/wash-guides-style-005.json"
+  ],
+  "output": "A committed, domain-reviewed, source-cited WashUnit document covering household cleaning and surface disinfection at the non-clinical level, with a PR-tied review-log entry.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

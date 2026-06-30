@@ -1,0 +1,34 @@
+{
+  "id": "wash-guides-deploy-024",
+  "title": "Production publish: static site + printable packs + versioning/staleness + disclaimers",
+  "project": "wash-guides",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["public-health", "wash", "tooling", "deployment", "accessibility", "offline"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The production publish is the final technical step before partner distribution. It must deploy a static build over HTTPS, generate printable packs, implement the validUntil staleness fail-safe (which withholds HIGH-risk units past their review window until re-signed-off), display visible disclaimers and attribution, and pass the no-telemetry/no-PII audit. Depends on WCAG 2.2 AA hardening (a11y-013) and the i18n framework (i18n-019) being complete.",
+  "objective": "Deploy the wash-guides static site to production (HTTPS), generate printable content packs, implement the validUntil staleness fail-safe that withholds expired HIGH-risk units until re-verified-and-signed-off, and confirm the 'not an official/endorsed product' disclaimer and attribution are visible on every page; verify no telemetry/PII at runtime.",
+  "acceptanceCriteria": [
+    "Static build is deployed over HTTPS to a production host (e.g., GitHub Pages, Netlify, or Cloudflare Pages); build artifacts are reproducible",
+    "Printable packs are generated for each content unit and locale, including all required attribution, citations, and disclaimers in the printed version",
+    "The validUntil staleness fail-safe is implemented: any HIGH-risk unit past its validUntil date is withheld from the published site until re-verified and re-signed-off; a staleness warning is shown for medium-risk units past their window",
+    "Every page/pack displays a visible 'not an official or endorsed WHO/UNICEF/CDC product' notice and full attribution and citation list",
+    "No telemetry endpoints, third-party scripts, cookies (beyond offline renderer minimum), analytics, or PII fields are present; verified by static audit and runtime no-egress check",
+    "Reviewed and approved by a maintainer and the project steward (once secured) distinct from the author; pnpm build && pnpm test && pnpm lint all pass"
+  ],
+  "resources": [
+    "PLAN.md",
+    "TASKS.md",
+    "tasks/wash-guides-a11y-013.json",
+    "tasks/wash-guides-i18n-019.json"
+  ],
+  "output": "A production-deployed static site with printable packs, staleness fail-safe, required disclaimers and attribution, and verified no-telemetry/no-PII posture.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

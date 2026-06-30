@@ -1,0 +1,31 @@
+{
+  "id": "wash-guides-style-005",
+  "title": "Plain-language style guide + controlled vocabulary",
+  "project": "wash-guides",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["public-health", "wash", "content", "accessibility", "plain-language"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "wash-guides content must be plain-language and low-literacy-friendly because the primary beneficiaries are households in low-resource settings, including people with limited literacy or limited access to the dominant language. Without a shared style guide and controlled vocabulary, content contributors will produce inconsistent, varying-difficulty text that the CI readability check cannot uniformly target. This guide is used by all writing tasks and referenced by the CI readability gate.",
+  "objective": "Publish a plain-language style guide and controlled vocabulary for WASH how-to content, specifying target reading level, step length/structure, sentence complexity, vocabulary constraints, and dignity/tone guidelines so that all contributors produce consistently accessible, low-literacy-friendly content.",
+  "acceptanceCriteria": [
+    "Style guide specifies target reading level (e.g., maximum grade level or readability score) and step length constraints (maximum words per step, maximum steps per action) that the CI readability check can enforce programmatically",
+    "Controlled vocabulary lists preferred plain-language terms for common WASH concepts and flags technical terms to avoid or always define in context",
+    "Style guide addresses dignity, tone, and non-stigmatizing language for sensitive topics (sanitation, menstrual health), consistent with the cultural/dignity review gate",
+    "Style guide is reviewed and approved by a WASH/public-health content reviewer and an accessibility reviewer, both distinct from the author",
+    "Style guide is committed to the repo and referenced by the CI readability gate and all content authoring tasks"
+  ],
+  "resources": [
+    "PLAN.md",
+    "TASKS.md"
+  ],
+  "output": "A committed plain-language style guide and controlled vocabulary document, used by all content contributors and referenced by the CI readability check.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}
