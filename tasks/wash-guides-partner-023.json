@@ -1,0 +1,32 @@
+{
+  "id": "wash-guides-partner-023",
+  "title": "Secure named WASH/health distribution partner (need, topics, languages, endorsement)",
+  "project": "wash-guides",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["public-health", "wash", "governance", "partner-engagement", "distribution"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The project's Definition of Shipped (partner-adopted) requires a named WASH/health organization to confirm need in writing, identify priority topics and languages, and agree to adopt and distribute the content. No such partner is secured yet. Outreach target: ≥2 candidate partners in active conversation by 2026-10-31; named adopting/distributing partner + steward by 2026-12-31. On success, verifiedNeed flips to true and requestor is set across the project. If no partner is secured by ~2027-03-31, the steward + Elyos governance declare 'Publicly Shipped (generic public good).'",
+  "objective": "Identify, outreach to, and secure a named WASH/health distribution partner who confirms need in writing (letter of support or MOU), identifies priority topics and languages, and agrees to adopt/distribute the content in their community's language(s); document the partnership and update verifiedNeed and requestor across the project.",
+  "acceptanceCriteria": [
+    "At least two candidate distribution partners (WASH NGO, ministry of health WASH unit, community health network, or school-health program) are in active conversation by 2026-10-31; outreach dates and responses are recorded",
+    "A named WASH/health organization confirms need in writing (signed letter of support or MOU) and is recorded as the project requestor/partner",
+    "The partner identifies priority topics (which WASH topics matter most in their context) and priority languages (which non-English locales to prioritize), guiding the localization tasks (l10n-020, l10n-022)",
+    "The partner agrees to adopt and distribute the content in their community's language(s); distribution channel and expected reach methodology are documented",
+    "The MOU or letter of support is committed (or referenced) in the repo's governance documents; verifiedNeed is updated to true and requestor is set to the named partner across the project's task files",
+    "If no partner is secured by ~2027-03-31, a documented decision by the steward and Elyos governance to declare 'Publicly Shipped (generic public good)' is the fallback; this task captures that decision if it occurs"
+  ],
+  "resources": [
+    "PLAN.md",
+    "TASKS.md"
+  ],
+  "output": "A committed partnership document (MOU or letter of support reference) recording the named WASH/health distribution partner, confirmed need, priority topics and languages, and updated verifiedNeed and requestor fields across the project.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

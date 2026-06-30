@@ -1,0 +1,37 @@
+{
+  "id": "wash-guides-l10n-021",
+  "title": "Localize HIGH-risk units into priority language #1 (numeric re-verified per language)",
+  "project": "wash-guides",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["public-health", "wash", "content", "translation", "i18n", "localization", "dosing"],
+  "riskTier": "high",
+  "urgent": false,
+  "deliverable": "translation",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "A translated HIGH-risk unit is a new failure surface: numbers can be misread in a different script, decimal/thousands separators differ between locales, and a danger-sign translated inaccurately can cost a life. All numeric values must be re-verified in the target language, not just confirmed once in English. This translation is gated on the core medium-risk localization (l10n-020) and on the HIGH-risk source units (content-016 at minimum) being published. Expert spot-check in the target language is required where feasible.",
+  "objective": "Translate the HIGH-risk WashUnit content (ORS preparation, household chlorination dosing, chemical disinfection dosing) into priority language #1, with numeric values independently re-verified in the target language, danger-signs and disclaimers preserved and accuracy-checked, and expert spot-check of the translated HIGH-risk content where feasible.",
+  "acceptanceCriteria": [
+    "All HIGH-risk WashUnit content (content-015, content-016, content-017) is translated into priority language #1 and committed as locale catalog entries",
+    "Every numeric value (ORS ratio, chlorine concentration, contact time, flocculant dosing) is independently re-verified in the target language by a person other than the translator — locale-specific number formatting, decimal/thousands separators, and script rendering are all checked",
+    "Danger-signs and when-to-seek-care content is translated and accuracy-checked by a competent speaker who confirms the meaning is preserved exactly in the target language",
+    "Disclaimer text ('informational, not a substitute for professional medical care / trained WASH practice') is translated and its meaning verified to be fully preserved in the target language",
+    "Expert spot-check of the translated HIGH-risk content is documented where feasible: if a speaker with the relevant clinical or WASH/EH credential reviews, that is recorded in the review log",
+    "A PR-tied review-log entry documents the translation review, numeric re-verification, and any expert spot-check; reviewed and approved by a translation+safety reviewer distinct from the translator",
+    "Build-time i18n completeness check passes for priority language #1 HIGH-risk content; CI HIGH-risk gate (ci-018) remains green on the source language content"
+  ],
+  "resources": [
+    "PLAN.md",
+    "TASKS.md",
+    "tasks/wash-guides-l10n-020.json",
+    "tasks/wash-guides-content-016.json",
+    "tasks/wash-guides-content-015.json",
+    "tasks/wash-guides-content-017.json"
+  ],
+  "output": "A committed locale catalog for priority language #1 covering all HIGH-risk content, with documented safety-accuracy review, numeric re-verification in the target language, and PR-tied review-log entries.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

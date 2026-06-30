@@ -1,0 +1,32 @@
+{
+  "id": "wash-guides-ops-025",
+  "title": "Outcomes-tracking process (partner self-report) + content re-review cadence + staleness fail-safe",
+  "project": "wash-guides",
+  "type": "maintenance",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["public-health", "wash", "governance", "operations", "outcomes-tracking"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "wash-guides collects no telemetry, so outcomes (reach, adoption) are tracked via partner self-report using a standard template. Content freshness is enforced by lastReviewed/validUntil fields with a staleness fail-safe. Without a documented re-review cadence and outcomes process, content will go stale silently and reach will be untracked. This task depends on a secured partner (partner-023) and the production deployment (deploy-024) to define meaningful cadence targets.",
+  "objective": "Define, document, and commit: (1) a privacy-preserving partner self-report template for outcomes tracking (distinct people/households reached, channels, regions, languages, de-duplication notes); (2) a content re-review cadence (shorter for HIGH-risk units); and (3) the stale-content flagging and fail-safe process using lastReviewed/validUntil (how flagging works, who triggers re-review, what happens when a HIGH-risk unit passes validUntil).",
+  "acceptanceCriteria": [
+    "Partner self-report template is committed and covers: partner name, reporting period, distribution channels, distinct people/households reached (confirmed vs. estimated, flagged as such), regions/languages, de-duplication notes across touchpoints and across partners at roll-up; template explicitly counts distinct recipients (not downloads), once per period",
+    "Content re-review cadence is documented: at minimum annual review for all units, shorter cadence for HIGH-risk dosing/clinical units; cadence is recorded in governance docs and referenced in unit validUntil dates",
+    "Stale-content fail-safe process is documented: how auto-flagging is triggered (lastReviewed + validUntil); what happens when a HIGH-risk unit passes validUntil (withheld from the published site until re-verified and re-signed-off); who is responsible for initiating re-review",
+    "Outcomes process is privacy-preserving: no in-app telemetry, no PII; all reach data is partner-attested self-report using the template",
+    "Document reviewed and approved by a maintainer and the project steward (once secured) distinct from the author"
+  ],
+  "resources": [
+    "PLAN.md",
+    "TASKS.md",
+    "tasks/wash-guides-partner-023.json"
+  ],
+  "output": "Committed governance documents: a partner self-report outcomes template, a content re-review cadence document, and a stale-content fail-safe process document.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

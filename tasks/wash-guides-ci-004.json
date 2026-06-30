@@ -1,0 +1,35 @@
+{
+  "id": "wash-guides-ci-004",
+  "title": "CI gates: schema validation, citation-coverage, no-self-approval, numeric-verification, readability, copy/similarity, no-egress",
+  "project": "wash-guides",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["public-health", "wash", "tooling", "ci", "content-integrity"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "wash-guides enforces content quality through automated CI gates rather than manual spot-checks. These gates ensure every merged unit is schema-valid, fully cited, not self-approved, numerically verified (for any dosing/ratio/contact-time claim), readable by the target audience, free of verbatim copied source text, and — for any rendered output — accessible and not making network egress. Depends on the content schema (data-003) being finalized.",
+  "objective": "Implement and wire up all mandatory CI checks: schema validation against the WashUnit schema, 100% citation coverage (every claim cited), no-self-approval enforcement (approvedBy !== reviewedBy), numeric-verification completeness (every numericClaim has verifiedBy and expertConfirmed), readability check against the plain-language target level, copy/similarity check flagging verbatim source reuse, and — for any rendered output — WCAG/a11y and no-egress (CSP connect-src 'none' + runtime network interception) checks. pnpm build && pnpm test && pnpm lint must all pass.",
+  "acceptanceCriteria": [
+    "CI runs schema validation and fails on any content unit that does not conform to the WashUnit schema",
+    "CI enforces 100% citation coverage: any claim without a named authoritative citation with retrieval date fails the build",
+    "CI enforces no-self-approval: build fails if approvedBy equals reviewedBy on any unit",
+    "CI enforces numeric-verification completeness: any numericClaim missing verifiedBy or expertConfirmed fields fails the build",
+    "CI runs a readability check and flags any unit exceeding the plain-language target reading level or step length defined in the style guide",
+    "CI runs a copy/similarity check and flags verbatim reuse of source text above a defined threshold",
+    "For any rendered output: CI runs automated a11y checks (axe/pa11y) with zero critical issues, and a runtime no-egress check that fails if any unexpected outbound network request is made",
+    "pnpm build && pnpm test && pnpm lint all pass in CI on a known-good content unit, and at least one check correctly fails on a deliberately malformed unit in the test suite"
+  ],
+  "resources": [
+    "PLAN.md",
+    "TASKS.md",
+    "tasks/wash-guides-data-003.json"
+  ],
+  "output": "A CI workflow with all required content-integrity gates wired up and passing, enforcing schema, citation, no-self-approval, numeric-verification, readability, copy/similarity, and (for rendered output) a11y and no-egress checks.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

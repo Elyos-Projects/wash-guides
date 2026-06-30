@@ -1,0 +1,31 @@
+{
+  "id": "wash-guides-design-028",
+  "title": "Low-literacy pictogram set (openly-licensed or original)",
+  "project": "wash-guides",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["public-health", "wash", "content", "accessibility", "low-literacy", "pictograms"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Low-literacy pictograms support WASH how-to comprehension for people who cannot read the text. The license must be clean: either original artwork or openly-licensed sets (e.g., CC0 or CC-BY) that are compatible with CC-BY-4.0 output. No third-party logos, emblems, or trademarks may be reproduced. No identifiable people depicted without documented consent (default: avoid identifiable individuals). This is a design-spec deliverable that defines the pictogram approach and specifies or produces the asset set.",
+  "objective": "Define the low-literacy pictogram approach for wash-guides: identify or commission a license-clean set of pictograms covering the core WASH how-to topics (handwashing steps, water treatment, latrine use, etc.), verify license compatibility with CC-BY-4.0 output, and produce or reference the asset set with provenance documented.",
+  "acceptanceCriteria": [
+    "Pictogram approach is documented: whether using an existing openly-licensed set (with specific license verified), commissioning original artwork, or a hybrid; license compatibility with CC-BY-4.0 output is confirmed and recorded",
+    "No third-party logos, emblems, or trademarks are included; no identifiable individuals are depicted",
+    "Pictograms cover at minimum the core WASH how-to topics: handwashing technique, water boiling, safe water storage, latrine use, and safe excreta disposal",
+    "Provenance of each asset (source, license, retrieval/commission date) is recorded in the repo",
+    "Design spec or asset set reviewed and approved by a maintainer distinct from the author"
+  ],
+  "resources": [
+    "PLAN.md",
+    "TASKS.md"
+  ],
+  "output": "A committed design specification or pictogram asset set covering core WASH topics, with verified license compatibility and documented provenance for each asset.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

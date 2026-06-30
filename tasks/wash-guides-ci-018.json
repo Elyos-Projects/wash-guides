@@ -1,0 +1,34 @@
+{
+  "id": "wash-guides-ci-018",
+  "title": "Enforce HIGH-risk gate in CI (expertSignOff + numeric verification + disclaimer required)",
+  "project": "wash-guides",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["public-health", "wash", "tooling", "ci", "content-integrity", "risk-management"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "The HIGH-risk CI gate is the automated enforcement backstop for the HIGH-risk content rules established in arch-002 and encoded in the content schema (data-003). Without this gate, a HIGH-risk unit could be merged without expert sign-off or with unverified numeric claims. This gate is critical for content integrity and must run before any HIGH-risk unit (content-015, content-016, content-017) is merged.",
+  "objective": "Implement and wire up a CI gate that fails the build for any content unit with riskClass:high that lacks a recorded expertSignOff, has any numericClaim without verifiedBy or with expertConfirmed:false, or is missing the required disclaimer and danger-signs fields; and passes for a well-formed HIGH-risk unit and all medium-risk units.",
+  "acceptanceCriteria": [
+    "Build fails any riskClass:high unit that is missing the expertSignOff field (regardless of whether all other fields are valid)",
+    "Build fails any riskClass:high unit that has any numericClaim with missing verifiedBy, or with expertConfirmed not set to true",
+    "Build fails any riskClass:high unit that is missing the required disclaimer field or (for clinical units) the danger-signs/when-to-seek-care field",
+    "Build passes a well-formed HIGH-risk unit with expertSignOff, all numericClaims verified and expertConfirmed:true, and required disclaimer and danger-sign fields present",
+    "Build passes all medium-risk units regardless of expertSignOff (which is not required for medium risk)",
+    "Gate is integrated into the CI workflow (pnpm test or dedicated CI step); pnpm build && pnpm test && pnpm lint all pass; reviewed and approved by a maintainer distinct from the author"
+  ],
+  "resources": [
+    "PLAN.md",
+    "TASKS.md",
+    "tasks/wash-guides-data-003.json",
+    "tasks/wash-guides-arch-002.json"
+  ],
+  "output": "A PR adding a CI gate that enforces the HIGH-risk content requirements (expertSignOff, numeric verification, disclaimer) with test cases covering both pass and fail scenarios.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

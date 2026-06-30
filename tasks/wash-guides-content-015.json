@@ -1,0 +1,38 @@
+{
+  "id": "wash-guides-content-015",
+  "title": "ORS preparation + dehydration danger-signs / when-to-seek-care (clinical)",
+  "project": "wash-guides",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["public-health", "wash", "content", "clinical", "ors", "dehydration"],
+  "riskTier": "high",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "ORS preparation and dehydration danger-signs is the highest-risk content in wash-guides. An incorrect ORS ratio or missed danger-sign can directly harm a person, particularly an infant or young child. This unit is hard-gated on a secured credentialed expert reviewer (partner-014) and the CI HIGH-risk gate (ci-018). No expert = no start. Every numeric value (ORS ratio, volumes, timings) must be independently second-checked and expert-confirmed. Scope is strictly household preparation and when-to-seek-care; no diagnosis, no medication, no IV instruction.",
+  "objective": "Author, source-cite, independently numeric-verify, expert-confirm, and publish a WashUnit covering ORS (oral rehydration solution) preparation at home and dehydration danger-signs / when-to-seek-care, with every numeric value tied to a specific authoritative source, independently second-checked, and confirmed by a licensed clinician; includes the required 'informational, not a substitute for professional medical care' disclaimer and explicit danger-signs content.",
+  "acceptanceCriteria": [
+    "Every numeric value (ORS ratio, water volume, salt/sugar amounts, timing) is tied to a specific named authoritative source (WHO/UNICEF) with retrieval date and verified license; no value is stated without a source reference",
+    "Every numeric value is independently second-checked by a person other than the author (numericClaims[].verifiedBy is distinct from the author) and confirmed by the secured licensed clinician (expertConfirmed:true on every numericClaim)",
+    "A recorded expertSignOff from the secured licensed clinician (partner-014) is attached to this content version before merge; the sign-off is version-scoped (attaches to a specific content version and citation/numeric set)",
+    "Unit includes explicit danger-signs / when-to-seek-care content (signs of severe dehydration, situations requiring immediate medical attention) sourced and clinician-confirmed",
+    "Unit carries a persistent 'This is general information, not a substitute for professional medical care; seek qualified help for serious symptoms or uncertainty' disclaimer in the rendered output",
+    "Scope is enforced: no diagnosis, no IV instruction, no medication dosing beyond ORS; borderline cases (e.g., ORS for infants) handled per the expert-confirmed scope line and linked to care",
+    "All source text is paraphrased — no verbatim copied WHO/UNICEF text; no logos/emblems; CI copy/similarity check passes",
+    "CI HIGH-risk gate (ci-018) passes: expertSignOff present, all numericClaims have verifiedBy and expertConfirmed:true, disclaimer and danger-signs fields present",
+    "Reviewed and approved by a WASH/public-health domain reviewer (not the author or the expert); PR-tied review-log entry written"
+  ],
+  "resources": [
+    "PLAN.md",
+    "TASKS.md",
+    "tasks/wash-guides-partner-014.json",
+    "tasks/wash-guides-data-003.json",
+    "tasks/wash-guides-ci-018.json"
+  ],
+  "output": "A committed, clinician-signed-off, independently numeric-verified, source-cited WashUnit for ORS preparation and dehydration danger-signs, with recorded expertSignOff, all numericClaims verified and expert-confirmed, and the required disclaimer and danger-signs content.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

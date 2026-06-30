@@ -1,0 +1,33 @@
+{
+  "id": "wash-guides-i18n-019",
+  "title": "i18n framework: catalogs, safe fallback, RTL, bundled offline fonts, completeness check",
+  "project": "wash-guides",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["public-health", "wash", "tooling", "i18n", "accessibility", "offline"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "wash-guides targets multilingual distribution, prioritizing low-resource languages where WASH need is greatest. The i18n framework must handle locale negotiation with a safe fallback (never blank or broken safety text), RTL layout for languages that need it, bundled offline fonts with required glyph coverage (no runtime web-font fetch), and a build-time completeness check. This unblocks all localization tasks and must be compatible with the offline-first renderer (render-007).",
+  "objective": "Implement an i18n framework for wash-guides: externalize strings and content units into locale catalogs, implement locale negotiation with safe fallback to a verified language, add RTL layout support, bundle required offline fonts with glyph coverage for target scripts, and add a build-time completeness check that fails if any locale is missing required strings or safety content.",
+  "acceptanceCriteria": [
+    "Strings and content units are externalized into locale catalogs; adding a new locale requires only adding catalog files, not code changes",
+    "Locale negotiation falls back safely to a verified baseline language (never renders blank, broken, or partially-translated safety text); fallback chain is documented and tested",
+    "RTL layout is supported and exercised in the test suite; at least one test verifies correct RTL rendering for a right-to-left locale",
+    "Required fonts for all target scripts are bundled with the build output (no runtime web-font fetch); glyph coverage for target locales is verified at build time",
+    "Build-time completeness check fails if any locale catalog is missing required strings or safety-critical fields (e.g., disclaimer, danger-signs); check is integrated into pnpm build or pnpm test",
+    "TypeScript/ESM; pnpm build && pnpm test && pnpm lint all pass; reviewed and approved by a maintainer and an accessibility reviewer distinct from the author"
+  ],
+  "resources": [
+    "PLAN.md",
+    "TASKS.md",
+    "tasks/wash-guides-render-007.json"
+  ],
+  "output": "A PR implementing the i18n framework with locale catalogs, safe fallback, RTL support, bundled offline fonts, and a build-time completeness check.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

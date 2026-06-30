@@ -1,0 +1,33 @@
+{
+  "id": "wash-guides-content-027",
+  "title": "Safe water for the immunocompromised (household practice)",
+  "project": "wash-guides",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["public-health", "wash", "content", "water-treatment", "immunocompromised", "clinical"],
+  "riskTier": "high",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "People who are immunocompromised (e.g., due to HIV/AIDS, chemotherapy, transplant) have heightened vulnerability to waterborne pathogens. Guidance on water safety for immunocompromised individuals requires clinical sign-off because the thresholds and recommendations may differ from general population guidance. This is a HIGH-risk backlog unit, gated on a secured licensed clinician (partner-014). Scope is household practice and 'when-to-consult-a-clinician'; not clinical treatment.",
+  "objective": "Author, source-cite, clinician-sign-off, and independently numeric-verify a WashUnit covering safe water practices for immunocompromised individuals at the household level — focusing on heightened precautions, appropriate water treatment methods, and when to consult a clinician — with required disclaimer and danger-signs/when-to-seek-care content.",
+  "acceptanceCriteria": [
+    "Every claim tied to a specific named authoritative source (WHO/CDC/relevant clinical guidelines) with retrieval date and verified license; no verbatim copied text; no logos/emblems; CI copy/similarity check passes",
+    "Every numeric value is independently second-checked and confirmed by the secured licensed clinician (expertConfirmed:true on all numericClaims); a recorded expertSignOff is attached before merge",
+    "Unit includes explicit 'when-to-consult-a-clinician' content; carries the required 'informational, not a substitute for professional medical care' disclaimer; scope is household practice only (no clinical treatment instruction)",
+    "CI HIGH-risk gate (ci-018) passes: expertSignOff present, all numericClaims verified and expertConfirmed:true, disclaimer field present",
+    "Reviewed and approved by a WASH/public-health domain reviewer distinct from the author and the expert; PR-tied review-log entry written"
+  ],
+  "resources": [
+    "PLAN.md",
+    "TASKS.md",
+    "tasks/wash-guides-partner-014.json",
+    "tasks/wash-guides-ci-018.json"
+  ],
+  "output": "A committed, clinician-signed-off, independently numeric-verified WashUnit covering safe water practices for immunocompromised individuals at the household level, with disclaimer, when-to-consult content, and PR-tied review-log entry.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

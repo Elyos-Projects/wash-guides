@@ -1,0 +1,35 @@
+{
+  "id": "wash-guides-data-003",
+  "title": "Content-unit schema + provenance/review-log + numeric-claim record",
+  "project": "wash-guides",
+  "type": "data",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["public-health", "wash", "content", "data", "tooling"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "wash-guides requires a machine-validated schema for every content unit so that citation coverage, review/sign-off separation, numeric-claim verification, and expert sign-off for HIGH-risk units can be enforced by CI. This schema is provisional until the content-format ADR (arch-001) lands, and its risk-classification fields depend on arch-002. It is the structural foundation all content and CI tasks build on.",
+  "objective": "Define the content-unit schema (WashUnit) and ancillary records (NumericClaim, ExpertSignOff, Citation, ReviewLogEntry) that every WASH how-to must conform to, with build-time validation that rejects units missing required fields, self-approvals, HIGH-risk units without expertSignOff, unverified numeric claims, or sources with unverified licenses.",
+  "acceptanceCriteria": [
+    "Schema captures all required fields: topic, riskClass, localized title and steps, audience, numericClaims[] (value/unit/context/sourceRef/verifiedBy/expertConfirmed), sources[] (org/title/url/retrievedDate/sourceLicense/licenseVerified), reviewStatus, reviewedBy, approvedBy (must differ from reviewedBy), expertSignOff (required when riskClass is high), reviewLogRef, disclaimer, lang, contentLicense, contentVersion, lastReviewed, validUntil",
+    "Build validation rejects any unit where approvedBy equals reviewedBy (no-self-approval rule enforced by code)",
+    "Build validation rejects any riskClass:high unit that lacks a recorded expertSignOff",
+    "Build validation rejects any numericClaim that is missing verifiedBy or expertConfirmed, or where expertConfirmed is false on a high-risk unit",
+    "Build validation rejects any source where licenseVerified is false",
+    "Schema follows the content-format decided in arch-001 (provisional until that ADR merges)",
+    "Schema is reviewed and approved by a maintainer and a WASH/public-health domain reviewer distinct from the author"
+  ],
+  "resources": [
+    "PLAN.md",
+    "TASKS.md",
+    "tasks/wash-guides-arch-001.json",
+    "tasks/wash-guides-arch-002.json"
+  ],
+  "output": "A committed content-unit schema definition with provenance/review-log and numeric-claim record types, plus a build-time validator that enforces all citation, review-separation, numeric-verification, and expert-sign-off rules.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

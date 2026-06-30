@@ -1,0 +1,34 @@
+{
+  "id": "wash-guides-render-007",
+  "title": "Static, offline-friendly renderer: accessible HTML + printable output + disclaimer/attribution",
+  "project": "wash-guides",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["public-health", "wash", "tooling", "accessibility", "offline", "renderer"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "wash-guides targets last-mile distribution where connectivity is poor. The renderer must produce accessible HTML and print-optimized output (print CSS or client-side PDF) that works fully offline, with no network egress — content must be self-contained. Every rendered unit must show attribution, source citations, and the risk-appropriate disclaimer. No third-party logos, trackers, or analytics. Depends on the content schema (data-003) being finalized. The renderer's technology choices (static site generator, print approach) should be consistent with the content-format ADR (arch-001).",
+  "objective": "Build a static, offline-friendly renderer that consumes WashUnit content and emits accessible HTML and print-optimized output per unit, baking in attribution, source citations, and the risk-appropriate disclaimer (including 'not an official/endorsed WHO/UNICEF/CDC product' notice); with a strict CSP (connect-src 'none') and no third-party scripts, logos, trackers, or analytics. TypeScript/ESM; builds via pnpm.",
+  "acceptanceCriteria": [
+    "Renderer emits valid, accessible HTML for each WashUnit, passing automated axe/pa11y checks with zero critical issues",
+    "Rendered output works fully offline with no network egress: CSP connect-src 'none' is set; a runtime no-egress E2E test (e.g., Playwright) confirms no unexpected outbound requests during render or print",
+    "Print-optimized output is produced (print CSS and/or client-side PDF): legible, low-literacy-friendly, and includes all required attribution and disclaimer text in the printed version",
+    "Every rendered unit displays: source attribution, citation list with retrieval dates, the risk-appropriate disclaimer, and the 'not an official/endorsed WHO/UNICEF/CDC product' notice",
+    "No third-party logos, emblems, trackers, analytics scripts, or CDN-loaded assets are present in any rendered output",
+    "TypeScript/ESM; pnpm build && pnpm test && pnpm lint all pass; reviewed and approved by a maintainer and an accessibility reviewer distinct from the author"
+  ],
+  "resources": [
+    "PLAN.md",
+    "TASKS.md",
+    "tasks/wash-guides-data-003.json",
+    "tasks/wash-guides-arch-001.json"
+  ],
+  "output": "A committed static renderer codebase that produces accessible, offline-friendly, print-optimized HTML output for WASH how-tos, with attribution, citations, and disclaimers baked in and no-egress enforced.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

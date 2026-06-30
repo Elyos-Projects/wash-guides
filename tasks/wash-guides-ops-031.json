@@ -1,0 +1,32 @@
+{
+  "id": "wash-guides-ops-031",
+  "title": "Annual re-validation against updated WHO/UNICEF/CDC guidance",
+  "project": "wash-guides",
+  "type": "maintenance",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["public-health", "wash", "governance", "operations", "content-freshness"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "WASH guidance from WHO, UNICEF, and CDC is periodically updated. Content that was accurate at publication can become outdated or incorrect as official recommendations change. Annual re-validation ensures the content stays current. HIGH-risk units (dosing, ORS/dehydration, clinical) require a shorter cadence (e.g., as needed after guidance changes, minimum annually). This is a recurring maintenance task; the first instance establishes the process; subsequent instances are tracked separately.",
+  "objective": "Conduct an annual re-validation of all published WashUnit content against current WHO/UNICEF/CDC guidance, update any content where official recommendations have changed, and re-trigger expert sign-off for any HIGH-risk unit whose content changes; produce a re-validation report committed to the repo.",
+  "acceptanceCriteria": [
+    "All published WashUnit content is reviewed against the current versions of cited authoritative sources (WHO, UNICEF, CDC); any changes in official guidance since last review are identified",
+    "Any unit where authoritative guidance has materially changed is updated, re-reviewed, and (for HIGH-risk units) re-signed-off by the credentialed expert before re-publication; updated contentVersion, lastReviewed, and validUntil dates are set",
+    "HIGH-risk units are reviewed first and on a shorter cadence if guidance changes mid-year; any HIGH-risk unit past validUntil is withheld until re-validated and re-signed-off",
+    "A re-validation report is committed to the repo recording: which units were reviewed, which changed and how, which had expert re-sign-off, and the updated source retrieval dates",
+    "Re-validation is performed by a WASH/public-health domain reviewer; expert re-sign-off for HIGH-risk units is by the credentialed expert; both distinct from the re-validation author"
+  ],
+  "resources": [
+    "PLAN.md",
+    "TASKS.md",
+    "tasks/wash-guides-ops-025.json"
+  ],
+  "output": "A committed re-validation report documenting which units were reviewed, which were updated, and the updated lastReviewed/validUntil dates; any changed HIGH-risk units re-signed-off by the credentialed expert.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

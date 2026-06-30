@@ -1,0 +1,34 @@
+{
+  "id": "wash-guides-l10n-029",
+  "title": "Additional priority languages (low-resource focus)",
+  "project": "wash-guides",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["public-health", "wash", "content", "translation", "i18n", "localization"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "translation",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "After priority languages #1 and #2 (l10n-020, l10n-022), additional low-resource languages where WASH need is greatest are the next localization priority. Priority is partner-driven: languages identified by the secured distribution partner(s) take precedence. For each language, the full safety-accuracy review and numeric re-verification process from l10n-020/022 applies. Any additional HIGH-risk unit translation must also follow the l10n-021 numeric re-verification process.",
+  "objective": "Translate the core medium-risk WASH content set into one or more additional priority languages (low-resource focus, partner-driven), each with safety-accuracy review (not just fluency) and the same process as l10n-020, with numeric re-verification for any HIGH-risk content following l10n-021.",
+  "acceptanceCriteria": [
+    "Each additional priority language's translation covers the full core medium-risk content set and is reviewed by a competent speaker for both fluency and safety accuracy",
+    "Safety-accuracy review is documented in a PR-tied review-log entry for each language",
+    "Any HIGH-risk unit translated into additional languages has its numeric values independently re-verified in the target language per the l10n-021 process",
+    "Translated disclaimer text preserves the required framing in each target language; source attribution is preserved",
+    "Build-time i18n completeness check passes for each additional locale; reviewed and approved by a translation+safety reviewer distinct from the translator for each language"
+  ],
+  "resources": [
+    "PLAN.md",
+    "TASKS.md",
+    "tasks/wash-guides-i18n-019.json",
+    "tasks/wash-guides-l10n-020.json",
+    "tasks/wash-guides-l10n-022.json"
+  ],
+  "output": "Committed locale catalogs for one or more additional priority languages covering the core medium-risk content set, with documented safety-accuracy review and PR-tied review-log entries.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}
